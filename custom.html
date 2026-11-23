@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>定制服务 | 花艺在线</title>
+<style>
+    header {
+  background: #fff0f5;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+header .logo {
+  font-size: 28px;
+  color: #d14b5a;
+  font-weight: bold;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #d14b5a;
+}
+@media(max-width:768px){
+  header .container {
+    flex-direction: column;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+    /* 定制流程 */
+.process{
+  padding:60px 20px;
+  text-align:center;
+  background:#fffafc;
+  border-radius:20px;
+  margin:40px auto;
+}
+
+.process h2{
+  font-size:32px;
+  color:#d14b5a;
+  margin-bottom:40px;
+  text-shadow:1px 1px 3px rgba(0,0,0,.1);
+}
+
+.process-box{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:30px;
+}
+
+.step{
+  width:220px;
+  padding:20px;
+  background:white;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,.1);
+  transition:all 0.4s ease;
+}
+
+.step:hover{
+  transform:translateY(-10px) scale(1.05);
+  box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.step img{
+  width:80px;
+  height:80px;
+  margin-bottom:15px;
+  border-radius:50%;
+  object-fit:cover;
+  transition:all 0.4s ease;
+}
+
+.step h3{
+  font-size:20px;
+  color:#d14b5a;
+  margin-bottom:10px;
+}
+
+.step p{
+  font-size:16px;
+  color:#555;
+}
+
+/* 服务优势 */
+.advantages{
+  padding:60px 20px;
+  background:linear-gradient(to bottom,#fff0f5,#fffafc);
+  text-align:center;
+  border-radius:20px;
+  margin-bottom:40px;
+}
+
+.advantages h2{
+  font-size:32px;
+  color:#d14b5a;
+  margin-bottom:40px;
+  text-shadow:1px 1px 3px rgba(0,0,0,.1);
+}
+
+.adv-list{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:30px;
+}
+
+.adv-card{
+  width:220px;
+  padding:20px;
+  background:white;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,.1);
+  transition:all 0.4s ease;
+  text-align:center;
+}
+
+.adv-card:hover{
+  transform:translateY(-10px) scale(1.05);
+  box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.adv-card img{
+  width:60px;
+  height:60px;
+  margin-bottom:15px;
+  object-fit:cover;
+  border-radius:50%;
+}
+
+/* 响应式 */
+@media(max-width:768px){
+  .process-box, .adv-list{
+    flex-direction:column;
+    align-items:center;
+  }
+}
+</style>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+<div class="container">
+<h1 class="logo">花艺在线</h1>
+
+<nav>
+<ul>
+<li><a href="index.html">首页</a ></li>
+<li><a href="index.html">花艺搭配</a ></li>
+<li><a href="bouquet.html">花束展示</a ></li>
+<li><a href="custom.html" class="active">定制服务</a ></li>
+<li><a href="about.html">关于我们</a ></li>
+<li><a href="contact.html">联系我们</a ></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="page-banner">
+<h2>专属花束定制服务</h2>
+</section>
+
+<section class="process">
+<h2>定制流程</h2>
+
+<div class="process-box">
+
+<div class="step">
+<img src="images/choose_flowers.png" alt="选择花材">
+<h3>① 选择花材</h3>
+<p>玫瑰、百合、向日葵等自由搭配</p >
+</div>
+
+<div class="step">
+<img src="images/choose_wrap.png" alt="选择包装">
+<h3>② 选择包装</h3>
+<p>多种礼盒与包装纸可选</p >
+</div>
+
+<div class="step">
+<img src="images/leave_message.png" alt="留言祝福">
+<h3>③ 留言祝福</h3>
+<p>支持个性化贺卡定制</p >
+</div>
+
+<div class="step">
+<img src="images/complete_order.png" alt="完成订单">
+<h3>④ 完成订单</h3>
+<p>专业花艺师制作并配送</p >
+</div>
+
+</div>
+</section>
+
+<section class="advantages">
+<h2>服务优势</h2>
+
+<div class="adv-list">
+
+<div class="adv-card">
+<img src="images/fresh.png" alt="新鲜花材">
+<h3>新鲜花材</h3>
+<p>每日精选优质鲜花</p >
+</div>
+
+<div class="adv-card">
+<img src="images/packaging.png" alt="精美包装">
+<h3>精美包装</h3>
+<p>专业花艺包装设计</p >
+</div>
+
+<div class="adv-card">
+<img src="images/delivery.png" alt="快速配送">
+<h3>快速配送</h3>
+<p>同城最快2小时送达</p >
+</div>
+
+<div class="adv-card">
+<img src="images/florist.png" alt="专业花艺师">
+<h3>专业花艺师</h3>
+<p>多年经验花艺团队</p >
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>©2026 花艺在线</p >
+</footer>
+
+</body>
+</html>

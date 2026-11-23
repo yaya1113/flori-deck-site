@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>花束展示 | 花艺在线</title>
+<style>
+/* ---------- 头部 ---------- */
+header {
+  background: #fff0f5;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+header .logo {
+  font-size: 28px;
+  color: #d14b5a;
+  font-weight: bold;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #d14b5a;
+}
+@media(max-width:768px){
+  header .container { flex-direction: column; }
+  header nav ul { flex-direction: column; gap: 10px; margin-top: 10px; }
+}
+
+/* ---------- 页面横幅 ---------- */
+.page-banner{
+  height: 240px;
+  background: linear-gradient(135deg,#ffb6c1,#ffe4e1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.1);
+}
+.page-banner h2{
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0,0,0,.4);
+}
+
+/* ---------- 花束系列 ---------- */
+.bouquet-series{
+  padding:50px 20px;
+  text-align:center;
+  background:#fffafc;
+  border-radius:20px;
+  margin: 30px 20px;
+  box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.bouquet-series h2{
+  font-size:32px;
+  color:#d14b5a;
+  margin-bottom:40px;
+  text-shadow:1px 1px 3px rgba(0,0,0,.1);
+}
+
+.bouquet-series .cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.bouquet-series .card{
+  width:220px;
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 8px 25px rgba(0,0,0,.1);
+  transition: all 0.4s ease;
+  text-align:center;
+}
+.bouquet-series .card:hover{
+  transform: translateY(-10px) scale(1.05);
+  box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+.bouquet-series .card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  transition: all 0.5s ease;
+}
+.bouquet-series .card h3{
+  font-size:20px;
+  color:#d14b5a;
+  margin:15px 0 5px 0;
+}
+.bouquet-series .card p{
+  font-size:15px;
+  color:#555;
+  margin-bottom:20px;
+}
+
+/* ---------- 响应式 ---------- */
+@media(max-width:768px){
+  .bouquet-series .cards{
+    flex-direction: column;
+    align-items:center;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1 class="logo">花艺在线</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">首页</a ></li>
+        <li><a href="index.html">花艺搭配</a ></li>
+        <li><a href="bouquet.html" class="active">花束展示</a ></li>
+        <li><a href="custom.html">定制服务</a ></li>
+        <li><a href="about.html">关于我们</a ></li>
+        <li><a href="contact.html">联系我们</a ></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-banner">
+  <h2>精品花束展示</h2>
+</section>
+
+<!-- 爱情系列 -->
+<section class="bouquet-series">
+  <h2>爱情系列</h2>
+  <div class="cards">
+    <div class="card"><img src="images/hongmeigui.png" alt="红玫瑰花束"><h3>红玫瑰花束</h3><p>表达热烈爱情</p ></div>
+    <div class="card"><img src="images/fenmeigui.png" alt="粉玫瑰花束"><h3>粉玫瑰花束</h3><p>甜美温柔，浪漫首选</p ></div>
+    <div class="card"><img src="images/baihua.png" alt="白玫瑰花束"><h3>白玫瑰花束</h3><p>纯洁无瑕，象征真爱</p ></div>
+    <div class="card"><img src="images/mixlove.png" alt="混合花束"><h3>混合花束</h3><p>多彩组合，浪漫满分</p ></div>
+    <div class="card"><img src="images/roseheart.png" alt="心形玫瑰"><h3>心形玫瑰</h3><p>浪漫告白必备</p ></div>
+    <div class="card"><img src="images/lovecombo.png" alt="爱情组合"><h3>爱情组合</h3><p>花材搭配，幸福满分</p ></div>
+  </div>
+</section>
+
+<!-- 生日系列 -->
+<section class="bouquet-series">
+  <h2>生日系列</h2>
+  <div class="cards">
+    <div class="card"><img src="images/xiangrikui.png" alt="向日葵花束"><h3>向日葵花束</h3><p>充满活力，生日送礼首选</p ></div>
+    <div class="card"><img src="images/hunda.png" alt="混搭花束"><h3>混搭花束</h3><p>多样花材搭配，惊喜满分</p ></div>
+    <div class="card"><img src="images/rosebirthday.png" alt="玫瑰生日花束"><h3>玫瑰生日花束</h3><p>温馨浪漫，送朋友首选</p ></div>
+    <div class="card"><img src="images/lilybirthday.png" alt="百合生日花束"><h3>百合生日花束</h3><p>优雅高贵，生日祝福</p ></div>
+    <div class="card"><img src="images/festivalbirthday.png" alt="节日花束"><h3>节日花束</h3><p>庆祝生日，喜气洋洋</p ></div>
+    <div class="card"><img src="images/mixbirthday.png" alt="混合生日花束"><h3>混合生日花束</h3><p>多花材搭配，惊喜满分</p ></div>
+  </div>
+</section>
+
+<!-- 毕业系列 -->
+<section class="bouquet-series">
+  <h2>毕业系列</h2>
+  <div class="cards">
+    <div class="card"><img src="images/biye.png" alt="向日葵毕业花束"><h3>向日葵毕业花束</h3><p>祝福毕业生前程似锦</p ></div>
+    <div class="card"><img src="images/xiaochuju.png" alt="小雏菊花束"><h3>小雏菊花束</h3><p>青春美好，纪念难忘</p ></div>
+    <div class="card"><img src="images/mixgrad.png" alt="混合毕业花束"><h3>混合毕业花束</h3><p>多种花材组合，寓意美好</p ></div>
+    <div class="card"><img src="images/rosagrad.png" alt="玫瑰毕业花束"><h3>玫瑰毕业花束</h3><p>热情祝福，铭记青春</p ></div>
+        <div class="card">
+      <img src="images/bluegrad.png" alt="蓝色毕业花束"><h3>蓝色毕业花束</h3><p>青春梦想，扬帆起航</p >
+    </div>
+
+    <div class="card">
+      <img src="images/sungrad.png" alt="阳光毕业花束">
+      <h3>阳光毕业花束</h3>
+      <p>愿未来一路繁花</p >
+    </div>
+
+  </div>
+</section>
+
+<!-- 婚礼系列 -->
+<section class="bouquet-series">
+  <h2>婚礼系列</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="images/wedding1.png" alt="婚礼花束">
+      <h3>纯白婚礼花束</h3>
+      <p>象征纯洁与幸福</p >
+    </div>
+
+    <div class="card">
+      <img src="images/wedding2.png" alt="婚礼捧花">
+      <h3>韩式婚礼捧花</h3>
+      <p>简约优雅，高级感十足</p >
+    </div>
+
+    <div class="card">
+      <img src="images/wedding3.png" alt="玫瑰婚礼花束">
+      <h3>玫瑰婚礼花束</h3>
+      <p>浪漫爱情的见证</p >
+    </div>
+
+    <div class="card">
+      <img src="images/wedding4.png" alt="欧式婚礼花束">
+      <h3>欧式婚礼花束</h3>
+      <p>高贵典雅，气质出众</p >
+    </div>
+
+    <div class="card">
+      <img src="images/wedding5.png" alt="森系婚礼花束">
+      <h3>森系婚礼花束</h3>
+      <p>自然清新，唯美浪漫</p >
+    </div>
+
+    <div class="card">
+      <img src="images/wedding6.png" alt="高级婚礼花束">
+      <h3>高级定制婚礼花束</h3>
+      <p>专属设计，独一无二</p >
+    </div>
+
+  </div>
+</section>
+
+<!-- 节日系列 -->
+<section class="bouquet-series">
+  <h2>节日系列</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="images/festival1.png" alt="母亲节花束">
+      <h3>母亲节花束</h3>
+      <p>感恩母爱，温暖表达</p >
+    </div>
+
+    <div class="card">
+      <img src="images/festival2.png" alt="教师节花束">
+      <h3>教师节花束</h3>
+      <p>感谢师恩，表达敬意</p >
+    </div>
+
+    <div class="card">
+      <img src="images/festival3.png" alt="情人节花束">
+      <h3>情人节花束</h3>
+      <p>浪漫告白，甜蜜满分</p >
+    </div>
+  </div>
+</section>
+
+<!-- 热销排行 -->
+<section class="bouquet-series">
+
+  <h2>热销排行榜</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="images/hongmeigui.png" alt="销量冠军">
+      <h3>TOP1 红玫瑰花束</h3>
+      <p>年度销量冠军</p >
+    </div>
+
+    <div class="card">
+      <img src="images/sungrad.png" alt="销量亚军">
+      <h3>TOP2 向日葵花束</h3>
+      <p>毕业季热销款</p >
+    </div>
+
+    <div class="card">
+      <img src="images/lilybirthday.png" alt="销量季军">
+      <h3>TOP3 百合花束</h3>
+      <p>长辈送礼首选</p >
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  <p>©2026 花艺在线 版权所有</p >
+</footer>
+
+</body>
+</html>
