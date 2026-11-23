@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>花艺搭配 | 花艺在线</title>
+<style>
+  /* 页面横幅 */
+  header {
+  background: #fff0f5;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+header .logo {
+  font-size: 28px;
+  color: #d14b5a;
+  font-weight: bold;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #d14b5a;
+}
+@media(max-width:768px){
+  header .container {
+    flex-direction: column;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+.page-banner{
+  height:220px;
+  background:linear-gradient(135deg,#ffb6c1,#ffe4e1);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:40px;
+  border-radius:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+.page-banner h2{
+  font-size:38px;
+  color:white;
+  text-shadow:2px 2px 10px rgba(0,0,0,.4);
+}
+
+/* 花艺卡片网格 */
+.flower-grid{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:30px;
+  padding:30px 20px;
+}
+
+.flower-card{
+  width:220px;
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,.1);
+  transition:all 0.4s ease;
+  text-align:center;
+}
+
+.flower-card:hover{
+  transform:translateY(-10px) scale(1.05) rotate(-1deg);
+  box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.flower-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  transition:all 0.5s ease;
+}
+
+.flower-card h3{
+  font-size:22px;
+  color:#d14b5a;
+  margin:15px 0 5px 0;
+}
+
+.flower-card p{
+  font-size:16px;
+  color:#555;
+  margin-bottom:20px;
+}
+
+/* 热门搭配推荐 */
+.matching-recommend{
+  padding:60px 20px;
+  background:#fff0f5;
+  text-align:center;
+  border-radius:20px;
+  margin:40px auto;
+}
+
+.matching-recommend h2{
+  font-size:32px;
+  color:#d14b5a;
+  margin-bottom:30px;
+  text-shadow:1px 1px 3px rgba(0,0,0,.2);
+}
+
+.matching-recommend .cards{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:30px;
+}
+
+.matching-recommend .card{
+  width:240px;
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,.1);
+  transition:all 0.4s ease;
+  text-align:center;
+}
+
+.matching-recommend .card:hover{
+  transform:translateY(-10px) scale(1.05);
+  box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.matching-recommend .card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  transition:0.5s;
+}
+
+.matching-recommend .card h3{
+  font-size:20px;
+  color:#d14b5a;
+  margin:15px 0 5px 0;
+}
+
+.matching-recommend .card p{
+  font-size:15px;
+  color:#555;
+  margin-bottom:20px;
+}
+
+</style>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1 class="logo">花艺在线</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">首页</a ></li>
+        <li><a href="index.html" class="active">花艺搭配</a ></li>
+        <li><a href="bouquet.html">花束展示</a ></li>
+        <li><a href="custom.html">定制服务</a ></li>
+        <li><a href="about.html">关于我们</a ></li>
+        <li><a href="contact.html">联系我们</a ></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-banner">
+  <h2>花艺搭配推荐</h2>
+</section>
+
+<section class="flower-grid">
+  <div class="flower-card">
+    <img src="images/rose.png" alt="玫瑰">
+    <h3>玫瑰</h3>
+    <p>代表热烈爱情</p >
+  </div>
+  <div class="flower-card">
+    <img src="images/lily.png" alt="百合">
+    <h3>百合</h3>
+    <p>象征纯洁与高雅</p >
+  </div>
+  <div class="flower-card">
+    <img src="images/sunflower.png" alt="向日葵">
+    <h3>向日葵</h3>
+    <p>青春活力、阳光明媚</p >
+  </div>
+  <div class="flower-card">
+    <img src="images/tulip.png" alt="郁金香">
+    <h3>郁金香</h3>
+    <p>优雅典雅、浪漫气息</p >
+  </div>
+  <div class="flower-card">
+    <img src="images/carnation.png" alt="康乃馨">
+    <h3>康乃馨</h3>
+    <p>温馨母爱象征</p >
+  </div>
+  <div class="flower-card">
+    <img src="images/hydrangea.png" alt="绣球">
+    <h3>绣球</h3>
+    <p>祝福幸福、美好</p >
+  </div>
+</section>
+
+<section class="matching-recommend">
+  <h2>热门搭配推荐</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="images/bouquet1.png" alt="玫瑰+满天星">
+      <h3>玫瑰 + 满天星</h3>
+      <p>浪漫告白首选搭配</p >
+    </div>
+    <div class="card">
+      <img src="images/bouquet2.png" alt="百合+尤加利">
+      <h3>百合 + 尤加利</h3>
+      <p>优雅大方，适合长辈</p >
+    </div>
+    <div class="card">
+      <img src="images/bouquet3.png" alt="向日葵+雏菊">
+      <h3>向日葵 + 雏菊</h3>
+      <p>青春活力，毕业季热销</p >
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>©2026 花艺在线</p >
+</footer>
+
+</body>
+</html>

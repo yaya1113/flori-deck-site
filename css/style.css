@@ -1,0 +1,161 @@
+/* ============================================
+   花艺在线 · 全局公共样式
+   结构：变量 → 基础重置 → 布局容器 → 页头导航
+        → 区块标题 → 页脚 → 通用组件 → 响应式
+   ============================================ */
+
+/* ---------- 1. 设计变量（Design Token） ---------- */
+:root {
+  --brand: #d14b5a;
+  --brand-light: #ff6b81;
+  --brand-soft: #fff0f5;
+  --brand-softer: #fffafc;
+  --gradient-warm: linear-gradient(135deg, #ffb6c1, #ffe4e1);
+  --text-main: #333;
+  --text-sub: #555;
+  --shadow-card: 0 10px 25px rgba(0, 0, 0, .1);
+  --shadow-card-hover: 0 15px 35px rgba(0, 0, 0, .15);
+  --radius: 20px;
+  --transition: .4s ease;
+  --content-width: 1200px;
+}
+
+/* ---------- 2. 基础重置 ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  color: var(--text-main);
+  background: #fff;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- 3. 布局容器 ---------- */
+.container {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---------- 4. 页头导航 ---------- */
+header {
+  background: var(--brand-soft);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo {
+  font-size: 28px;
+  color: var(--brand);
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+header nav ul li a {
+  font-weight: 500;
+  color: var(--text-main);
+  transition: color .3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: var(--brand);
+}
+
+/* ---------- 5. 区块标题 ---------- */
+section h2 {
+  font-size: 32px;
+  color: var(--brand);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ---------- 6. 页脚 ---------- */
+footer {
+  background: var(--brand);
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+/* ---------- 7. 通用卡片组件 ---------- */
+.card,
+.contact-card,
+.promise-item,
+.culture-card,
+.timeline-item,
+.data-item,
+.member {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  transition: transform .3s;
+}
+
+.card:hover,
+.contact-card:hover,
+.promise-item:hover,
+.culture-card:hover,
+.timeline-item:hover,
+.data-item:hover,
+.member:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* ---------- 8. 响应式 ---------- */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .flower-grid,
+  .bouquet-series .cards,
+  .matching-recommend .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section h2 {
+    font-size: 26px;
+  }
+}
