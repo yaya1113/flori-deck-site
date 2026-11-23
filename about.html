@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关于我们 | 花艺在线</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    header {
+  background: #fff0f5;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+header .logo {
+  font-size: 28px;
+  color: #d14b5a;
+  font-weight: bold;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #d14b5a;
+}
+@media(max-width:768px){
+  header .container {
+    flex-direction: column;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+/* 关于我们页单独优化 */
+.about-section{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:50px;
+  padding:60px 20px;
+  flex-wrap:wrap;
+}
+.about-section .about-image img{
+  width:500px;
+  max-width:100%;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+.about-section .about-text{
+  max-width:500px;
+}
+
+.culture-box, .timeline, .data-box, .team-list{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+.culture-card, .timeline-item, .data-item, .member{
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,.1);
+  text-align:center;
+  transition: transform .3s;
+}
+.culture-card img, .member img{
+  width:120px;
+  height:120px;
+  object-fit:cover;
+  border-radius:50%;
+  margin-bottom:15px;
+}
+.culture-card:hover, .timeline-item:hover, .data-item:hover, .member:hover{
+  transform:translateY(-10px) scale(1.03);
+}
+.timeline-item span{
+  font-size:28px;
+  color:#d14b5a;
+  font-weight:bold;
+}
+.data{
+  background:linear-gradient(135deg,#ffdce5,#fff5f8);
+  padding:60px 20px;
+}
+.vision{
+  background:url('images/rose.png') center/cover no-repeat;
+  padding:120px 20px;
+  text-align:center;
+  color:white;
+}
+.vision-content{
+  background:rgba(0,0,0,.35);
+  padding:40px;
+  border-radius:20px;
+  display:inline-block;
+  max-width:600px;
+}
+.page-banner{
+  height:250px;
+  background:linear-gradient(45deg,#ffb6c1,#ffe4e1);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:15px;
+}
+.page-banner h2{
+  font-size:36px;
+  color:white;
+  text-shadow:2px 2px 8px rgba(0,0,0,.3);
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<h1 class="logo">花艺在线</h1>
+<nav>
+<ul>
+<li><a href="index.html">首页</a ></li>
+<li><a href="index.html">花艺搭配</a ></li>
+<li><a href="bouquet.html">花束展示</a ></li>
+<li><a href="custom.html">定制服务</a ></li>
+<li><a href="about.html" class="active">关于我们</a ></li>
+<li><a href="contact.html">联系我们</a ></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="page-banner">
+    <h2>关于花艺在线</h2>
+</section>
+
+<!-- 品牌故事 -->
+<section class="about-section">
+    <div class="about-image">
+        <img src="images/about1.png" alt="品牌故事">
+    </div>
+    <div class="about-text">
+        <h2>品牌故事</h2>
+        <p>
+            花艺在线成立于2024年，专注于线上鲜花定制服务，致力于将花艺与生活美学相结合。
+            我们相信每一束花都有属于自己的故事，希望通过鲜花传递温暖、祝福与爱意。
+        </p >
+        <p>
+            从最初的小型工作室，到如今拥有专业花艺团队，我们始终坚持品质与服务并重。
+        </p >
+    </div>
+</section>
+
+<!-- 企业文化 -->
+<section class="culture">
+<h2>企业文化</h2>
+<div class="culture-box">
+<div class="culture-card">
+<img src="images/culture1.png" alt="品质优先">
+<h3>品质优先</h3>
+<p>精选新鲜花材，坚持高标准制作。</p >
+</div>
+<div class="culture-card">
+<img src="images/culture2.png" alt="用心服务">
+<h3>用心服务</h3>
+<p>关注客户需求，提供个性化定制。</p >
+</div>
+<div class="culture-card">
+<img src="images/culture3.png" alt="创新设计">
+<h3>创新设计</h3>
+<p>不断探索花艺美学与创意表达。</p >
+</div>
+</div>
+</section>
+
+<!-- 发展历程 -->
+<section class="history">
+<h2>发展历程</h2>
+<div class="timeline">
+<div class="timeline-item">
+<span>2024</span>
+<p>花艺在线品牌成立</p >
+</div>
+<div class="timeline-item">
+<span>2025</span>
+<p>上线鲜花定制服务</p >
+</div>
+<div class="timeline-item">
+<span>2026</span>
+<p>服务客户突破10000+</p >
+</div>
+</div>
+</section>
+
+<!-- 品牌数据 -->
+<section class="data">
+<div class="data-box">
+<div class="data-item">
+<h3>10000+</h3>
+<p>服务客户</p >
+</div>
+<div class="data-item">
+<h3>5000+</h3>
+<p>花束设计</p >
+</div>
+<div class="data-item">
+<h3>98%</h3>
+<p>客户满意度</p >
+</div>
+</div>
+</section>
+
+<!-- 团队 -->
+<section class="team">
+<h2>花艺师团队</h2>
+<div class="team-list">
+<div class="member">
+<img src="images/team1.png" alt="高级花艺师">
+<h3>高级花艺师</h3>
+<p>8年花艺设计经验</p >
+</div>
+<div class="member">
+<img src="images/team2.png" alt="创意设计师">
+<h3>创意设计师</h3>
+<p>擅长韩式花艺风格</p >
+</div>
+<div class="member">
+<img src="images/team3.png" alt="资深花艺师">
+<h3>资深花艺师</h3>
+<p>专注婚礼花艺设计</p >
+</div>
+</div>
+</section>
+
+<!-- 品牌理念 -->
+<section class="vision">
+<div class="vision-content">
+<h2>让鲜花传递更多温暖</h2>
+<p>我们希望通过花艺设计，为生活增添仪式感，用鲜花记录每一个值得纪念的时刻。</p >
+</div>
+</section>
+
+<footer>
+<p>©2026 花艺在线</p >
+</footer>
+
+</body>
+</html>

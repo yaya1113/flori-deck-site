@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>联系我们 | 花艺在线</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    header {
+  background: #fff0f5;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+header .logo {
+  font-size: 28px;
+  color: #d14b5a;
+  font-weight: bold;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #d14b5a;
+}
+@media(max-width:768px){
+  header .container {
+    flex-direction: column;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+/* 联系我们页面专属样式 */
+
+/* 门店展示 */
+.store-show{
+    padding:60px 20px;
+}
+.store-show h2{
+    text-align:center;
+    color:#d14b5a;
+    font-size:36px;
+    margin-bottom:40px;
+}
+.store-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+.store-img img{
+    width:450px;
+    max-width:90%;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+.store-text{
+    max-width:450px;
+}
+.store-text h3{
+    color:#d14b5a;
+    margin-bottom:15px;
+    font-size:28px;
+}
+.store-text ul{
+    margin-top:15px;
+    padding-left:20px;
+    font-size:16px;
+}
+
+/* 联系方式卡片 */
+.contact-cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+.contact-card{
+    width:250px;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.4s;
+}
+.contact-card:hover{
+    transform:translateY(-10px);
+}
+.contact-card img{
+    width:70px;
+    height:70px;
+    margin-bottom:15px;
+}
+
+/* 地图 */
+.map{
+    text-align:center;
+    padding:60px 20px;
+}
+.map h2{
+    color:#d14b5a;
+    text-align:center;
+    margin-bottom:30px;
+}
+.map img{
+    width:900px;
+    max-width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+/* 服务承诺 */
+.promise{
+    background:#fff5f8;
+    padding:60px 20px;
+}
+.promise h2{
+    text-align:center;
+    color:#d14b5a;
+    margin-bottom:40px;
+    font-size:32px;
+}
+.promise-box{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+.promise-item{
+    width:250px;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    transition:.4s;
+}
+.promise-item:hover{
+    transform:translateY(-10px);
+}
+.promise-item img{
+    width:70px;
+    height:70px;
+    margin-bottom:15px;
+}
+
+/* 留言表单 */
+.message{
+    max-width:700px;
+    margin:60px auto;
+    padding:40px 20px;
+    background:#fff0f5;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+.message h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#d14b5a;
+    font-size:28px;
+}
+.message form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.message input,
+.message textarea{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+.message button{
+    background:#ff6b81;
+    color:white;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+.message button:hover{
+    background:#ff4757;
+}
+
+/* 响应式 */
+@media(max-width:768px){
+    .store-box{
+        flex-direction:column;
+        align-items:center;
+    }
+    .contact-cards{
+        flex-direction:column;
+        align-items:center;
+    }
+    .promise-box{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<h1 class="logo">花艺在线</h1>
+<nav>
+<ul>
+<li><a href="index.html">首页</a ></li>
+<li><a href="index.html">花艺搭配</a ></li>
+<li><a href="bouquet.html">花束展示</a ></li>
+<li><a href="custom.html">定制服务</a ></li>
+<li><a href="about.html">关于我们</a ></li>
+<li><a href="contact.html" class="active">联系我们</a ></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="page-banner">
+<h2>联系我们</h2>
+</section>
+
+<section class="store-show">
+<h2>花艺工作室</h2>
+<div class="store-box">
+<div class="store-img">
+<img src="images/store.png" alt="花店实景">
+</div>
+<div class="store-text">
+<h3>花艺在线工作室</h3>
+<p>专注鲜花定制与花艺设计，为客户提供高品质鲜花服务。</p >
+<ul>
+<li>营业时间：09:00-21:00</li>
+<li>支持同城配送</li>
+<li>支持个性化定制</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="contact-info">
+<h2>联系方式</h2>
+<div class="contact-cards">
+<div class="contact-card">
+<img src="images/phone.png" alt="电话">
+<h3>联系电话</h3>
+<p>138-8888-8888</p >
+</div>
+<div class="contact-card">
+<img src="images/email.png" alt="邮箱">
+<h3>电子邮箱</h3>
+<p>flower@qq.com</p >
+</div>
+<div class="contact-card">
+<img src="images/location.png" alt="地址">
+<h3>门店地址</h3>
+<p>北京市朝阳区花艺创意园</p >
+</div>
+</div>
+</section>
+
+<section class="map">
+<h2>门店位置</h2>
+<img src="images/map.png" alt="地图">
+</section>
+
+<section class="promise">
+<h2>服务承诺</h2>
+<div class="promise-box">
+<div class="promise-item">
+<img src="images/fresh.png" alt="新鲜花材">
+<h3>新鲜花材</h3>
+<p>每日精选采购</p >
+</div>
+<div class="promise-item">
+<img src="images/delivery.png" alt="快速配送">
+<h3>快速配送</h3>
+<p>同城最快2小时送达</p >
+</div>
+<div class="promise-item">
+<img src="images/service.png" alt="贴心售后">
+<h3>贴心售后</h3>
+<p>全程客服服务</p >
+</div>
+</div>
+</section>
+
+<section class="message">
+<h2>在线留言</h2>
+<form>
+<input type="text" placeholder="请输入姓名">
+<input type="email" placeholder="请输入邮箱">
+<textarea rows="6" placeholder="请输入留言内容"></textarea>
+<button type="submit">提交留言</button>
+</form>
+</section>
+
+<footer>
+<p>©2026 花艺在线</p >
+</footer>
+</body>
+</html>
